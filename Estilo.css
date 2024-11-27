@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(33, 33, 33);
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    display: flex;
+    zoom: 100%;
+    overflow: hidden;
+}
+body button{
+    font-family: 'Courier New', Courier, monospace;
+}
+.incio{
+    height: 100%;
+    width: 100%;
+}
+.titulo{
+    font-size: 26px;
+    position: relative;
+    color: white;
+    right: -25%;
+    top: 40px;
+    
+
+    
+}
+.boxt h2{
+    position: relative;
+    left: 140px;
+    top: 50px;
+    color: white;
+
+
+    
+}
+.buton{
+    position: relative;
+    left: 10%;
+    top: 40px;
+    width: 50%;
+    height: 8vh;
+    border-radius: 30px;
+    border-style: none;
+    font-size: 28px;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+.botao1{
+    position: relative;
+    top: 100px;
+    left: 25%;
+    
+
+}
+.botao1 button{
+    font-size: 30px;
+    font-style: italic;
+    border-radius: 30px;
+    height: 8vh;
+    width: 20%;
+}
+.botao1 button:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-color: rgb(255, 255, 255);
+    background-color: black;
+    transition: color 0.5s;
+
+}
+.texto{
+    color: white;
+    position: relative;
+    left: 20%;
+    top: 18vh;    
+}
+.tipoS{
+    text-decoration: none;
+}
+.texto a:hover{
+    transition: 0.5s;
+    color: aqua;
+}
+img{
+    position: relative;
+    height: 130%;
+    right: 40%;
+    bottom: 18%;
+    animation: go-back 3s infinite alternate-reverse;
+}
+@keyframes go-back {
+    from {
+      transform: translatey(100px);
+    }
+    to {
+      transform: translatey(0);
+    }
+}

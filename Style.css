@@ -1,0 +1,123 @@
+body{
+    background-color: rgb(33, 33, 33);
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    height: 100%;
+    width: 100%;
+    zoom: 100%;
+    overflow:hidden;
+    color: white;
+    text-align: center;
+    
+}
+.inicio{
+    display: flex;
+    justify-content: center;
+}
+.titulo{
+    font-size: 20px;
+    padding: 2%;
+    z-index: 1;
+
+    
+
+}
+.boxt{
+    z-index: 1;
+}
+.boxt h2{
+    font-size: 30px ;
+    z-index: 1;
+
+}
+.buton{
+    width: 80vh;
+    height: 8vh;
+    border-style: none;
+    border-radius: 30px;
+    font-size: 26px;
+    font-family:'Times New Roman', Times, serif;
+    z-index: 1;
+
+    
+}
+.buton button{
+    z-index: 1;
+}
+.botao1 button{
+    font-size: 22px;
+    position: relative;
+    top: 5vh;
+    border-radius: 30px;
+    height: 8vh;
+    width: 26vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    z-index: 1;
+
+}
+.botao1 button:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-color: rgb(255, 255, 255);
+    background-color: black;
+    transition: color 0.5s;
+
+}
+.texto{
+    position: relative;
+    top: 6vh; 
+    color: white;
+    z-index: 1;
+
+
+}
+.tipoS{
+    text-decoration: underline;
+}   
+.texto a:hover{
+    transition: 0.5s;
+    color: aqua;
+}
+.imagens img{
+    position: relative;
+    right: 5vh;
+    bottom: 90vh;
+    z-index: -1;
+    width: 185vh;
+ 
+}
+.imagem1 img{
+    animation: go-back 3s infinite alternate-reverse; 
+}
+.imagem3 img{
+    animation: go-back 3s infinite alternate-reverse; 
+}
+.imagem5 img{
+    animation: go-back 3s infinite alternate-reverse; 
+}
+@keyframes go-back {
+    from {
+      transform: translatex(-60px);
+    }
+    to {
+      transform: translatex(60px);
+    }
+}
+.imagem2 img{
+    animation: go-out 3s infinite alternate-reverse; 
+}
+.imagem4 img{
+    animation: go-out 3s infinite alternate-reverse; 
+}
+.imagem6 img{
+    animation: go-out 3s infinite alternate-reverse; 
+}
+@keyframes go-out {
+    from {
+      transform: translatex(60px);
+    }
+    to {
+      transform: translatex(-60px);
+    }
+}

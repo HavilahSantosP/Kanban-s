@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban's</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="./img/Logo.jpeg">
+</head>
+<body>
+  <!-- Barra lateral esquerda com controles -->
+    <div class="sidebar">
+        <button id="newBoardBtn" class="sidebar-btn">+</button>
+        <button id="folderBtn" class="sidebar-btn">📁</button>
+        <!-- Folder content will be dynamically populated -->
+        <div id="savedBoards" class="saved-boards hidden"></div>
+    </div>
+
+    <!-- Área principal do quadro Kanban -->
+    <div class="main-content">
+        <div id="kanbanBoard" class="kanban-board">
+            <div class="column" id="todo">
+                <h2>TO DO</h2>
+                <div class="dropzone" data-column="todo"></div>
+            </div>
+            <div class="column" id="doing">
+                <h2>DOING</h2>
+                <div class="dropzone" data-column="doing"></div>
+            </div>
+            <div class="column" id="done">
+                <h2>DONE</h2>
+                <div class="dropzone" data-column="done"></div>
+            </div>
+        </div>
+
+        <!-- Paleta dos Post-its -->
+        <div class="sticky-notes-palette">
+            <div class="sticky-note-icon" draggable="true" style="background-color: #F02B15"></div>
+            <div class="sticky-note-icon" draggable="true" style="background-color: #F06622"></div>
+            <div class="sticky-note-icon" draggable="true" style="background-color: #EFCB0E"></div>
+            <div class="sticky-note-icon" draggable="true" style="background-color: #0e8a2d"></div>
+            <div class="sticky-note-icon" draggable="true" style="background-color: #73FF9B"></div>
+            <div class="sticky-note-icon" draggable="true" style="background-color: #73FFE9"></div>
+            <div class="sticky-note-icon" draggable="true" style="background-color: #73B4FF"></div>
+            <div class="sticky-note-icon" draggable="true" style="background-color: #737BFF"></div>
+            <div class="sticky-note-icon" draggable="true" style="background-color: #B473FF"></div>
+            <div class="sticky-note-icon" draggable="true" style="background-color: #FF73B4"></div>
+            <div class="sticky-note-icon" draggable="true" style="background-color: #FF73E9"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
